@@ -52,3 +52,14 @@ All small scripts I created while learning python
                 print "Game Over"
     
 -----------------------------------------------------------
+#get string reverse
+    def reverse(text):
+    count = len(text) -1
+    reverse = ""
+    while(count>=0):
+        reverse = reverse +text[count]
+        count -=1
+    return reverse    
+    
+    reverse("abcd!")
+------------------------------------------------------------
