@@ -63,3 +63,14 @@ All small scripts I created while learning python
     
     reverse("abcd!")
 ------------------------------------------------------------
+# Prints anti-vowels from the input string
+    def anti_vowel(text):
+        count = len(text) - 1
+        final = ""
+        for i in text:
+            if i not in "aeiouAEIOU":
+                final = final + i
+        return final            
+                    
+    anti_vowel("Hello World")
+-------------------------------------------------------------
