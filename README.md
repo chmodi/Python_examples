@@ -89,3 +89,13 @@ All small scripts I created while learning python
         return count
         
     scrabble_score("pie")
+-----------------------------------------------------------
+# Censor the word
+    def censor(text, word):
+    text = text.split()
+    for i in range(len(text)):
+        if text[i] == word:
+            text[i] = "*" * len(word)
+    return " ".join(text)
+    
+    censor("This is new world","new")
