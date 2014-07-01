@@ -99,3 +99,15 @@ All small scripts I created while learning python
     return " ".join(text)
     
     censor("This is new world","new")
+--------------------------------------------------------------
+# Get median value from the list
+    def median(words):
+    words=sorted(words)
+    if len(words)%2!=0:
+        return words[(len(words)-1)/2]
+    else:
+        mean = float(words[(len(words)/2)-1]+words[(len(words)/2)])
+        mean=mean/2
+        return mean
+        
+    median([4,5,5,4])     
