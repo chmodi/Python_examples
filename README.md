@@ -111,3 +111,19 @@ All small scripts I created while learning python
         return mean
         
     median([4,5,5,4])     
+------------------------------------------------------------------
+# Binary Search Algorithm
+    numbers = [1,3,4,6,8,9,11]
+    def binarySearch(numbers,number, minindex, maxindex):
+    middleindex = (minindex+maxindex) / 2
+    if(numbers[middleindex] == number):
+        return middleindex
+    elif(numbers[middleindex] > number):
+        return binarySearch(numbers, number, minindex, middleindex-1)
+    elif(numbers[middleindex] < number):
+        return binarySearch(numbers, number, middleindex+1, maxindex )
+
+
+    number = binarySearch(numbers,8,0,6)
+    print number
+
