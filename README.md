@@ -127,3 +127,25 @@ All small scripts I created while learning python
     number = binarySearch(numbers,8,0,6)
     print number
 
+-------------------------------------------------------------------------
+# First version of bubble sort 
+
+    unsortedlist = [5,4,8,2,9,23]
+
+    def bubblesort(numbers):
+        #do all the magic here
+        swapped = False
+        for i in range(len(numbers)):
+            j = i + 1
+            if(j < len(numbers)):
+                if(numbers[i] > numbers[j]):
+                    swapped = True
+                    numbers[i], numbers[j] = numbers[j], numbers[i]
+        #call recursion
+        if(swapped == True):
+            bubblesort(numbers)
+        return numbers
+    
+    sortednumbers = bubblesort(unsortedlist)
+    print sortednumbers
+
